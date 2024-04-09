@@ -1,0 +1,163 @@
+body {
+    padding: 0;
+    margin: 0;
+	font-family: Arial;
+	background-image: url(black-background-with-focus-spot-light_1017-27230.avif);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.container {
+	width: 950px;
+	margin: 80px auto;
+	color: white;
+	line-height: 1.5;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.content {
+	display: flex;
+	margin-top: 40px;
+}
+
+.icon {
+	background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+    vertical-align: top;
+    height: 28px;
+    width: 28px;
+}
+
+.contact-info {
+	display: inline-block;
+	padding: 4px 20px 0px 20px;
+}
+
+.address-line {
+	margin-top: 40px;
+}
+
+.col-1 {
+	width: 530px;
+}
+
+.col-2 {
+	flex: 1 1 auto;
+	background-color: white;
+}
+
+.form-container {
+	color: #000;
+	padding: 30px;
+}
+
+.contact-info-title {
+	color: #01bdd4;
+}
+
+.form-row {
+	padding-bottom: 30px;
+}
+
+.form-field {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #000;
+}
+
+.send-btn {
+	border: 0px;
+	padding: 12px 26px;
+	background-color: #01bdd4;
+	color: white;
+}
+
+@media all and (max-width: 1024px) {
+	.container {
+		width: auto;
+		padding: 30px;
+	}
+	 .col-1 {
+		width: 360px;
+	} 
+}
+
+@media all and (max-width: 700px) {
+	.content {
+		display: block;
+	}
+	.col-2 {
+		margin-top: 40px;
+	} 
+	.col-1{
+	width:100%;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.container {
+		padding: 10px;
+	}
+}
+
+.head {
+    display: flex;
+    background-color: #f7f2f2;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -6px -1px 15px white;
+}
+
+.navbar {
+    display: flex;
+    gap: 37px;
+    position: relative;
+    left: -70px;
+    transition: 0.5s ease-in
+}
+
+.navbar a {
+    font-size: 21px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration-line: none;
+}
+
+.navbar a:hover {
+    transition: 0.2s ease-in;
+    box-shadow: 5px 5px 10px rgb(166, 162, 162);
+    scale: 1.03;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+    background-color: #413c3c;
+    color: white;
+
+}
+.footer .midfoot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 73px;
+}
+.ds{
+    position: relative;
+    font-size: 18px;
+    bottom: 27px;
+}
+.follow{
+    height: 69px;
+    display: flex;
+}
