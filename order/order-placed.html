@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      text-align: center;
+      margin-top: 200px;
+    }
+    #confetti-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .confetti {
+      position: absolute;
+      background-color: rgb(255, 0, 0); /* confetti color */
+      width: 10px;
+      height: 10px;
+      animation: confetti-fall 3s ease-out infinite;
+      transform: rotate(45deg);
+    }
+    @keyframes confetti-fall {
+      0% {
+        transform: translateY(-100%) rotate(45deg);
+      }
+      100% {
+        transform: translateY(100vh) rotate(45deg);
+      }
+    }
+    button{
+        background-color: red;
+    color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="confetti-container"></div>
+  <div class="container">
+    <h1>Order Placed</h1>
+    <p>Your order has been successfully placed.</p>
+     <a href="../index.html"><button>Back to Main</button></a>
+  </div>
+
+  <script>
+    // JavaScript to create confetti animation
+    const container = document.getElementById('confetti-container');
+
+    function createConfetti() {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.style.left = `${Math.random() * 100}vw`;
+      container.appendChild(confetti);
+
+      setTimeout(() => {
+        confetti.remove();
+      }, 3000);
+    }
+
+    setInterval(createConfetti, 100);
+
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+    background: linear-gradient(to right, #b9b2b2, #ffffff);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .card{
+        background-color: #fffbf2;
+    width: 332px;
+    height: 455px;
+    padding: 65px;
+    margin: 1px;
+    }
+
+    .form{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .head{
+        position: relative;
+    bottom: 58px;
+    font-size: 19px;
+    }
+    .method{
+        position: relative;
+    font-size: 17px;
+    bottom: 29px;
+    }
+
+    .type{
+        position: relative;
+    font-size: 21px;
+    bottom: 23px;
+    }
+    button{
+        font-size: 20px;
+    background: linear-gradient(to right, #b9b2b2, #ffffff);
+    border-radius: 16px;
+    }
+</style>
+<body>
+    <div class="card">
+    <div class="form">
+    <div class="head"><h1>Payment Gateway</h1></div>
+    <div class="method"><h2>Choose Payment Method:</h2></div>
+    <div class="type"><input type="radio" name="payment-method" id="online-payment" value="online">
+    <label for="online-payment">Online Payment</label><br>
+    <input type="radio" name="payment-method" id="offline-payment" value="offline">
+    <label for="offline-payment">Offline Payment</label><br></div>
+    <button onclick="handlePayment()">Proceed</button>
+</div>
+</div>
+    <script>
+        function handlePayment() {
+            const paymentOption = document.querySelector('input[name="payment-method"]:checked').value;
+
+            if (paymentOption === 'online') {
+                window.location.href = 'online-payment.html'; // Redirect to online payment page
+            } else if (paymentOption === 'offline') {
+                window.location.href = 'order-placed.html'; // Redirect to order placed page for offline payment
+            }
+        }
+    </script>
+</body>
+</html>

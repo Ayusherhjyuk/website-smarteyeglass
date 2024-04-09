@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Payment</title>
+</head>
+<style>
+    body{
+        background: linear-gradient(to right, #575454, #ffffff);
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    }
+    .card{
+        background-color: #fefefe;
+    width: 445px;
+    height: 606px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .heading{
+        position: relative;
+    bottom: -66px;
+    }
+    .card img{
+        height: 30px;
+        width: 40px;
+    }
+.apptype{
+    position: relative;
+    bottom: 19px;
+}
+.googlepay img{
+    position: relative;
+    height: 66px;
+    width: 120px;
+    top: 26px;
+}
+.paytm img{
+    position: relative;
+    height: 66px;
+    width: 123px;
+    top: 20px;
+}
+.paytm{
+    position: relative;
+    bottom: 22px;
+}
+.phonepay{
+    position: relative;
+    bottom: 53px;
+}
+.phonepay img{
+    position: relative;
+    height: 74px;
+    width: 128px;
+    bottom: -28px;
+}
+.watsapppay{
+    position: relative;
+    bottom: 62px;
+}
+.watsapppay img{
+    height: 56px;
+    width: 117px;
+    position: relative;
+    top: 18px;
+}
+.or{
+    position: relative;
+    bottom: 94px;
+    font-size: 26px;
+
+}
+.heading2 h2{
+    position: relative;
+    bottom: 106px;
+   
+}
+.Details{
+      
+        border-radius: 11px;
+   
+    position: relative;
+    bottom: 92px;
+   
+}
+.Details input{
+    border-radius: 14px;
+    height: 37px;
+    color: black;
+    width: 206px;
+    margin: 2px;
+
+}
+   .Details button{
+    background: linear-gradient(to right, #717171, #ffffff);
+    width: 153px;
+    height: 30px;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+    position: relative;
+    left: 30px;
+    border-radius: 20px;
+
+   }
+   .method{
+    position: relative;
+    top: 34px;
+}
+   .heading2 img{
+    height: 66px;
+    position: relative;
+    bottom: 105px;
+    left: 11px;
+    width: 72px;
+   }
+   .heading2{
+    display: flex
+   }
+</style>
+<body>
+    <div class="card">
+    <div class="heading"><h1>Online Payment Options</h1></div>
+    <div class="method"><h2>Select Payment Method:</h2></div>
+    <div class="apptype">
+        <div class="googlepay"><input type="radio" name="online-payment" id="google-pay" value="google">
+    <img src="google.svg"></div>
+    <div class="paytm"> <input type="radio" name="online-payment" id="phone-pay" value="phone">
+   <img src="Paytm-Logo.wine.png"><br></div>
+   <div class="phonepay"><input type="radio" name="online-payment" id="phone-pay" value="phone">
+   <img src="PhonePe-Logo.wine.png"></div>
+   <div class="watsapppay"><input type="radio" name="online-payment" id="phone-pay" value="phone">
+   <img src="whatsapp-pay-.png"><br></div>
+</div>
+    <!-- Other online payment options can be added here -->
+    <h2 class="or">Or</h2>
+    <div class="heading2"><h2>Card Payment:</h2> <img src="credit-card.png"></div>
+    <div class="Details">
+   <input type="text" placeholder="Card Holder Name"><br>
+    <input type="text" placeholder="Credit Card Number"><br>
+    <input type="text" placeholder="Expiry Date"><br>
+    <input type="text" placeholder="CVV Number"><br>
+    <button onclick="placeOrder()">Place Order</button>
+    
+</div>
+</div>
+
+    <script>
+        function placeOrder() {
+            // Handle card payment here if needed
+            window.location.href = 'order-placed.html'; // Redirect to order placed page
+        }
+    </script>
+</body>
+</html>

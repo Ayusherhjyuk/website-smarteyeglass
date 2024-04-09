@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+
+  .head {
+    display: flex;
+    background-color: #f7f2f2;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -3px 1px 7px;
+}
+
+.navbar {
+    display: flex;
+    gap: 37px;
+    position: relative;
+    left: -70px;
+    transition: 0.5s ease-in
+}
+
+.navbar a {
+    font-size: 21px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration-line: none;
+}
+
+.navbar a:hover {
+    transition: 0.2s ease-in;
+    box-shadow: 5px 5px 10px rgb(166, 162, 162);
+    scale: 1.03;
+}
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #575454, #ffffff);
+
+    z-index: -1;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .price-card,
+  .customer-card {
+    background-color: #f7f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .price-card h2,
+  .customer-card h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .price-card p,
+  #total-price {
+    font-size: 16px;
+  }
+  
+  .price-card label,
+  .customer-card label {
+    font-weight: bold;
+  }
+  
+  .price-card input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+  }
+  
+  .customer-card input[type="text"],
+  .customer-card input[type="number"],
+  .customer-card select,
+  .customer-card textarea {
+    width: 100%;
+    padding: 6px;
+    margin: 9px -1px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+   
+    font-size: 14px;
+  }
+  
+  .customer-card button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4ecdc4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .customer-card button:hover {
+    background-color: #45b8b0;
+  }
+  
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+    background-color: #413c3c;
+    color: white;
+
+}
+.footer .midfoot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 73px;
+}
+.ds{
+    position: relative;
+    font-size: 18px;
+    bottom: 27px;
+}
+.follow{
+    height: 69px;
+    display: flex;
+}
